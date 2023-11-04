@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="onepiece.ico" type="image/x-icon">
+    <title>listas OL, UL e de definição</title>
+</head>
+<body>
+    <h1>trabalhando com listas</h1>
+    <h2>listas ordenadas (OL)</h2>
+    <ol type="i">
+        <li>Acordar</li>
+        <li>ligar para fulano</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Trabalhar Home Office</li>
+        <li>Jogar videogame</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+        <!-- list item. </li> opcional. --> 
+    </ol>
+    <h2>listas não ordenadas</h2>
+
+    <ul type="circle"> <!-- disk, circle, square -->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Pringles</li>
+        <li>Doritos</li>
+    </ul>
+
+    <h2>Misturando as coisas</h2>
+    <p>bora colocar umas listas dentro de outras listas</p>
+    
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <ol type="a">
+            <li>item 2.a</li>
+            <li>item 2.b</li>
+            <li>item 2.c</li>         
+        </ol>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+    </ol>
+
+    <h2>Exercício</h2>
+    <h3>Lista dos meus jogos favoritos</h3>
+    <ul type="disk">
+        <li>Nintendinho</li>
+        <ol>
+            <li>Mario Bros</li>
+            <ul type="square">
+                <li>Super Mario Bros 3</li>
+                <li>Mario: Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+            <ul type="square">
+                <li>ninja Gaiden III</li>
+            </ul>
+        </ol>
+        <li>Super Nintendo</li>
+        <ol>
+            <li>Super Mario World</li>
+            <li>Donkey Kong</li>
+            <ul>
+                <li>Donkey Kong Country III</li>
+                <li>Diddy's Kong Quest</li>
+            </ul>
+        </ol>
+        <li>Playstation 1</li>
+        <ol>
+            <li>Final Fantasy</li>
+            <ul>
+                <li>Final Fantasy VII</li>
+                <li>Final Fantasy IX</li>
+            </ul>
+            <li>Castlevania</li>
+            <ul>
+                <li>Symphony of the Night</li>
+            </ul>
+        </ol>
+    </ul>
+
+    <h2>Lista de Definições</h2>
+    <p>É como se fosse um dicionário, temos os termos e as suas descrições. É uma lista sem 
+        demarcadores, mas bem útil em alguns casos. <br> <br> Toda lista de definições está dentro de uma tag &lt;dl&gt; (definition list) Cada 
+        termo é um &lt;dt&gt; (definition term) e cada descrição é um &lt;dd&gt; (definition description). 
+        Assim como os itens da lista, essas duas últimas tags possuem fechamento opcional, 
+        segundo a referência oficial da HTML5. </p>
+
+        <dl>
+            <dt>HTML</dt>
+            <dd>Linguagem de marcação utilizada para criar o conteúdo de sites.</dd>
+            <dt>CSS</dt>
+            <dd>Linguagem de marcação para a especificação de estilos em sites.</dd>
+            <dt>JavaScript</dt>
+            <dd>Linguagem de programação para criar interatividades em sites.</dd>
+        </dl>
+
+</body>
+</html>
