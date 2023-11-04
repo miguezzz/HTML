@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>outras formatações</title>
+</head>
+
+<body>
+    <h1>outras formatações</h1>
+    <h2>código-fonte</h2>
+    <p>o comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript</p>
+    <!-- code é usado pra monoespaçar as  letras -->
+    <pre>
+    <code>
+    num = int(input('Digite un número'))
+    if num % 2 == 0:
+    print('O número {num} é PAR')
+    else:
+    print('O número {num} é ÍMPAR')
+    print('Fim do programa')
+    </code>
+    </pre> <!-- pre é usado pra manter a aparência usada no vs code (tipo as quebras de linhas, espaçamentos etc.) -->
+
+    <h2>citações simples</h2>
+    <p>como diria o pai de um amigo, <q>o computador é um burro muito rápido</q></p>
+    <!-- tag 'q' (quote) dá sentido para a citação! -->
+    <h2>citações completas</h2>
+    <p>Segundo Jeff Noble, em seu livro "HTML para leigos",</p>
+    <blockquote
+        cite="https://www.google.com.br/books/edition/HTML_XHTML_e_CSS_Para_Leigos/E8ZtDwAAQBAJ?hl=pt-BR&gbpv=1&dq=html+para+leigos&printsec=frontcover">
+        O benefício de usar uma folha de estilo interna é a conveniência: suas regras de estilo ficam na mesma página
+        que sua marcação, portanto, você pode ajustar ambas rapidamente. E se você quiser que as mesmas regras de estilo
+        controlem a aparēncia de mais de uma página HTML, passe esses estilos de páginas web individuais para uma folha
+        de estilo externa.
+    </blockquote>
+
+    <h2>Abreviações (abbr)</h2>
+    <p>estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr
+            title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="rtl">estou aprendendo a criar coisas em HTML, e esta tag não serve pra nada</bdo></p>
+    <!--rtl = right to left ou ltr-->
+
+</body>
+
+</html>
