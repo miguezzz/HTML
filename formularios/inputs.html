@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs do HTML</title>
+</head>
+
+<body>
+    <h1>Inputs do HTML</h1>
+
+    <form>
+        <!--campo de texto-->
+        <label for="name">Nome:</label>
+        <input type="text" name="name" id="name" required placeholder="Ex.: João da Silva">   <!-- atributo name eh enviado ao back-end -->
+        <br><br>
+
+        <!-- Campo de email -->
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+
+        <!-- Campo de Senha -->
+        <label for="password">Senha:</label>
+        <input type="password" name="password" id="password" required>
+        <br><br>
+
+        <!-- Campo de seleção (radio) -->
+        <label>Gênero:</label><br>
+        <input type="radio" name="gender" id="male" value="m">  <!-- sem o value, o valor enviado fica apenas como "on" (marcado) -->
+        <label for="male">Masculino</label>
+        <input type="radio" name="gender" id="female" value="f">
+        <label for="female">Feminino</label>
+        <input type="radio" name="gender" id="other" value="o">
+        <label for="other">Outro</label>
+        <br><br>
+
+        <!-- Campo de Seleção Múltipla (Checkbox) -->
+        <label>Interesses:</label><br>
+        <input type="checkbox" name="interests" id="backend" value="backend">
+        <label for="backend">Back-end</label>
+        <input type="checkbox" name="interests" id="frontend" value="frontend">
+        <label for="frontend">Front-end</label>
+        <input type="checkbox" name="interests" id="mobile" value="mobile">
+        <label for="mobile">Mobile</label>
+        <br><br>
+
+        <!-- Campo de datas -->
+        <label for="birthdate">Data de Nascimento:</label><br>
+        <input type="date" name="bdate" id="birthdate">
+        <br><br>
+
+        <!-- Campo de arquivos (uploads) -->
+        <label for="profilephoto">Foto de perfil:</label>
+        <input type="file" name="avatar" id="profilephoto">
+        <br><br>
+
+        <!-- Campo de caixa de seleção (select) -->
+        <label for="situation">Situação atual:</label>
+        <select name="situation" id="situation">
+            <option value="" selected disabled>Selecione uma das opções</option> <!-- placeholder -->
+            <option value="student">Estudante</option>
+            <option value="intern">Atuando como estagiário/trainee</option>
+            <option value="junior">Atuando como desenvolvedor júnior</option>
+            <option value="engineer">Atuando como desenvolvedor pleno</option>
+            <option value="senior">Atuando como desenvolvedor sênior</option>
+        </select>
+        <br><br>
+
+        <!-- Campo de área de texto de múltiplas linhas -->
+        <label for="aboutme">Sobre mim...</label>
+        <textarea name="about" id="aboutme" cols="30" rows="5" placeholder="Fale sobre você..."></textarea> <!-- nao pode colocar conteudo dentro das tags -->
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>      
+</html>
