@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+</head>
+
+<body>
+    <h1>Formulário de Inscrição</h1>
+
+    <form>
+        <div>
+            <label for="name">Nome:</label><br>
+            <input type="text" name="name" id="name" required placeholder="Ex.: Fulano de Sousa">
+        </div>
+        <br>
+
+        <div>
+            <label for="email">E-mail:</label><br>
+            <input type="email" name="email" id="email" placeholder="fulano@mail.com" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="whatsapp">WhatsApp:</label><br>
+            <input type="tel" name="whatsapp" id="whatsapp" required>
+        </div>
+        <br>
+
+        <div>
+            <label>Área de Atuação:</label><br>
+            <input type="radio" name="area" id="development" value="development">
+            <label for="development">Desenvolvimento</label>
+
+            <input type="radio" name="area" id="QA" value="QA">
+            <label for="QA">Quality Assurance (QA)</label>
+
+            <input type="radio" name="area" id="dt_analysis" value="dt_analysis">
+            <label for="dt_analysis">Análise de Dados</label>
+
+            <input type="radio" name="area" id="infra" value="infra">
+            <label for="infra">Infraestrutura</label>
+        </div>
+        <br>
+
+        <div>
+            <label>Observações:</label><br>
+            <textarea name="comments" id="obs" cols="20" rows="3"></textarea>
+        </div>
+        <br>
+
+        <div>
+            <input type="checkbox" name="spam" id="spam" value="receive-emails">
+            <label for="spam">Desejo receber ofertas por email.</label>
+        </div>
+        <br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
